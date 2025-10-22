@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OUR SOLAR SYSTEM</title>
+    <style>
+        .on {
+            background-color: rgba(0, 110, 255, 0.791);
+        }
+
+        body{
+            background-color: #ffc551;
+        }
+
+        *{
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">Oinitial ommitr Solar System</h1>
+        <p>This is a paragraph of the solar system.</p>
+    </header>
+    <script>
+        let div = document.createElement('div');
+        div.id = "paragraph"
+        div.className = "on";
+        div.innerHTML = "<p>Our solar system consists of the Sun and all the objects gravitationally bound to it, including eight planets, their moons, dwarf planets, asteroids, comets, and dust. It formed approximately 4.6 billion years ago from the collapse of a molecular cloud and is located in a spiral arm of the Milky Way galaxy. The eight planets, in order from the Sun, are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. </p>";
+        document.body.append(div);
+    </script>
+</body>
+
+</html>
