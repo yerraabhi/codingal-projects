@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEXT THAT CHANGES COLORS</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+            }
+
+            .buttons{
+                text-align: center;
+                padding: 25px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Change the colors of the text.</h1>
+        <div class="text"><h3>This is a text</h3></div>
+        <div class="buttons">
+            <button onclick="red()">RED</button>
+            <button onclick="orange()">ORANGE</button>
+            <button onclick="yellow()">YELLOW</button>
+            <button onclick="green()">GREEN</button>
+            <button onclick="blue()">BLUE</button>
+            <button onclick="indigo()">INDIGO</button>
+            <button onclick="violet()">VIOLET</button>
+        </div>
+        <script>
+            let div = document.querySelector(".text");
+
+            function red() {
+                div.style.color = "red"
+            }
+
+            function orange() {
+                div.style.color = "orange"
+            }
+
+            function green() {
+                div.style.color = "green"
+            }
+
+            function blue() {
+                div.style.color = "blue"
+            }
+
+            function indigo() {
+                div.style.color = "indigo"
+            }
+
+            function yellow() {
+                div.style.color = "yellow"
+            }
+
+            function violet() {
+                div.style.color = "violet"
+            }
+        </script>
+    </body>
+</html>
