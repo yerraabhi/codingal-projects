@@ -1,6 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
+    <head>
+        <title>RP HOTELS</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #ccdad9
+            }
+
+            /* Navigation Bar */
+            .navbar{
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .navbar a{
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            .navbar a:hover{
+                background-color: #575757;
+            }
+
+            /*Home Content */
+            .home-content{
+                padding: 40px;
+                text-align: center;
+            }
+
+            /* Carousel Styles */
+            .carousel{
+                width: 60%;
+                margin: 40px auto;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .slides{
+                display: flex;
+                width: 100px;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .slide{
+                width: 100%;
+                flex-shrink: 0;
+            }
+
+            /* Radio Buttons For Slide Control */
+            input[name="slider"] {
+                display: none;
+            }
+
+            .navigation-manual{
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .manual-btn{
+                cursor: pointer;
+                display: inline-block;
+                background: #ccc;
+                border-radius: 50%;
+                padding: 5px;
+                margin: 0 5px;
+                transition: background 0.3s;
+            }
+
+            .manual-btn:hover {
+                background: #666;
+            }
+
+            #slide1:checked~.slides {
+                transform: translateX(0%);
+            }
+
+            #slide2:checked~.slides {
+                transform: translateX(-100%);
+            }
+
+            #slide3:checked~.slides {
+                transform: translateX(-200%);
+            }
+        </style>
+    </head>
     <body>
         <!--NAVIGATION-->
         <div class="navbar">
@@ -22,7 +111,6 @@
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
             <input type="radio" name="slider" id="slide3">
-        </div>
 
         <!--Slides container-->
         <div class="slides">
@@ -45,6 +133,7 @@
             <label for="slide2" class="manual-btn"></label>
             <label for="slide3" class="manual-btn"></label>
         </div>
+                </div>
 
         <!--INTRODUCTION CONTENT-->
         <div style="text-align: center; padding: 30px 20px; background-color: #f8f8f8;">
