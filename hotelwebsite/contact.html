@@ -3,6 +3,13 @@
     <head>
         <title>CONTACT</title>
         <style>
+            body{
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #fefefe;
+                color: #333;
+            }
+
             /* Navigation Bar */
             .navbar{
                 background-color: #333;
@@ -40,16 +47,89 @@
             }
 
             .contact-grid{
-
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-top: 40px;
+                justify-content: center;
             }
 
-            
+            .contact-form,
+            .contact-details {
+                flex: 1 1 300px;
+                background-color: #f3f8fc;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px  rgba(0,0,0,0.5);
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button{
+                background-color: #0d3b66;
+                color: rgb(255, 255, 255);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #094074;
+            }
+
+            .contact-details h3{
+                color: #0a2f5c;
+                margin-bottom: 15px;
+            }
+
+            .contact-details p{
+                line-height: 1.6;
+                font-size: 15.2px;
+                color: #444;
+            }
+            footer{
+                background-color: #1A1A1A;
+                color: white;
+                text-align: center;
+                margin-top: 60px;
+                padding: 30px 20px;
+            }
+
+            .footer-links a{
+                color: #ccc;
+                text-decoration: none;
+                margin: 0px 10px;
+            }
+
+            .footer-links a:hover{
+                text-decoration: underline;
+            }
+
+            .footer-copy{
+                font-size: 0.9em;
+                color: #999;
+                margin-top: 10px;
+            }
+
+            @media screen and (max-width:768px;) {
+                .contact-grid{
+                    flex-direction: column;
+                }   
+            }
         </style>
     </head>
     <body>
         <!--NAVIGATION-->
         <div class="navbar">
-            <a href="hotelwebsite.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
@@ -60,16 +140,16 @@
         <div class="contact-grid">
             <div class="contact-form">
                 <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <input type="text" name="subject" placeholder="Subject" required><br>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
         <div class="contact-details">
             <h3>RP Hotels - Head Office</h3>
-            <p>123 Grand Avenue, Connaught Place, New Delhi - 110001
+            <p>123 Grand Avenue, Connaught Place, New Delhi - 110001<br>
             +91-9876543210<br>
             inro@rphotels.com
             </p>
@@ -88,7 +168,7 @@
 
         <footer>
             <div class="footer-links">
-                <a href="hotelwebsite.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
