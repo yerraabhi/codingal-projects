@@ -1,0 +1,10 @@
+d={"Name":"Abhiram","rollno":10,"age":10}
+print(d)
+print(d["age"])
+d["rollno"]=12
+print(d)
+print(d.keys())
+print(d.items())
+print(d.values())
+d.pop("age")
+print(d)
