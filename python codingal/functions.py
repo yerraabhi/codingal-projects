@@ -4,6 +4,7 @@
 #     print("Hello," + name  + " Good Evening")
 
 # name=input("Enter Your Name :")
+
 # greet(name)
 
 #Write a Python program that takes any word as an input from the user and then creates a function that accepts the same word as a parameter and checks whether it is a palindrome or not. (Palindrome word is the same when read in both directions - forward or backward. Example - racecar)
