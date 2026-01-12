@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BOOTSTRAP SLIDER</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+    <title>SLIDER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content-"width-device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Carousel Example</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class-"carousel-indicators">
+            <li data-target-"#myCarousel" data-slide-to-"e" class="active"></li>
+            <li data-target-"#myCarousel" data-slide-to-"1"></li>
+            <li data-target-"#myCarousel" data-slide-to-"2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNT3S7hbsPdQ31abvX26lp5BGBvjfU7xwR1A&s" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75TJZJ79Rk1Sgrmrho0QCmI20u_d1qOqW2w&s" alt="Chicago" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGs7sZtQsHV4lj2P_nSQEQM5IPk1w076V26A&s" alt="New York" style="width:100%;">
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
