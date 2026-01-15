@@ -178,4 +178,5 @@ while ch in (1, 2, 3, 4, 5):
     elif ch == 5:
         display_all(pb)
     else:
-        thanks()
+        thanks(
+        )
