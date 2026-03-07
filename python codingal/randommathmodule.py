@@ -1,16 +1,16 @@
-# import random
-# playing=True
-# number=str(random.randint(0,9))
-# print("It will generate a number from 0-9 and you have to guess it.")
-# print("The game ends when you gett the number correct.")
-# while playing:
-#     guess=input("Guess the number:")
-#     if number==guess:
-#         print("You win the game")
-#         print("The number was",number)
-#         break
-#     else:
-#         print("The number is wrong.")
+import random
+playing=True
+number=str(random.randint(0,9))
+print("It will generate a number from 0-9 and you have to guess it.")
+print("The game ends when you get the number correct.")
+while playing:
+    guess=input("Guess the number:")
+    if number==guess:
+        print("You win the game")
+        print("The number was",number)
+        break
+    else:
+        print("The number is wrong.")
 
 import math
 print("The Floor and Ceiling value of 23.56 are "+str(math.floor(23.56))+" "+str(math.ceil(23.56)))
