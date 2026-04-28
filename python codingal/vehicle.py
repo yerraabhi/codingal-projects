@@ -16,5 +16,5 @@ bmw1=bmw()
 ferrari1=ferrari()
 
 for vehicle in (bmw1,ferrari1):
-    vehicle.fueltype
-    vehicle.maxspeed
+    vehicle.fueltype()
+    vehicle.maxspeed()
