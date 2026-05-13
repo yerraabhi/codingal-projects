@@ -41,11 +41,11 @@ class Sprite(pygame.sprite.Sprite):
             pygame.event.post(pygame.event.Event(BACKGROUNDCOLOURCHANGEEVENT))
     
     def changecolour(self):
-        self.image.fill(YELLOW,MAGENTA,ORANGE,WHITE)
+        self.image.fill([YELLOW,MAGENTA,ORANGE,WHITE])
 
 def changebackgroundcolour():
     global bgcolour
-    bgcolour=random.choice(BLUE,LIGHTBLUE,DARKBLUE)
+    bgcolour=random.choice([BLUE,LIGHTBLUE,DARKBLUE])
 
 allspriteslist=pygame.sprite.Group()
 
@@ -74,7 +74,7 @@ while not exit:
         elif event.type==BACKGROUNDCOLOURCHANGEEVENT:
             changebackgroundcolour()
     
-    allspriteslist.update
+    allspriteslist.update()
     screen.fill(bgcolour)
     allspriteslist.draw(screen)
 
