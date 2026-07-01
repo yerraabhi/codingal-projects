@@ -3,7 +3,7 @@ from tkinter import messagebox
 # from PIL import Image,ImageTk
 
 root=Tk()
-root.title=("Denomination Counter")
+root.title("Denomination Counter")
 root.configure(bg="light blue")
 root.geometry("650x400")
 
@@ -33,7 +33,7 @@ button1=Button(
     root,
     text="Let us get started.",
     command=msg,
-    bg="brown"
+    bg="brown",
     fg="white"
 )
 button1.place(x=260,y=360)
