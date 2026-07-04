@@ -52,9 +52,9 @@ def topwin():
     l2=Label(top,text="200",bg="light grey")
     l3=Label(top,text="100",bg="light grey")
 
-    t1=entry(top)
-    t2=entry(top)
-    t3=entry(top)
+    t1=Entry(top)
+    t2=Entry(top)
+    t3=Entry(top)
 
     def calculator():
         try:
