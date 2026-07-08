@@ -2,8 +2,8 @@ from tkinter import *
 
 window=Tk()
 
-window.title("Product")
-window.geometry("350x250")
+window.title("PRODUCT")
+window.geometry("400x300")
 
 label1=Label(text="First Number",bg="#FFFFFF")
 entry1=Entry()
